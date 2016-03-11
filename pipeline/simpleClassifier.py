@@ -48,6 +48,7 @@ def F1_certain_label(trl, prl, posLabel):
 
 
 def run():
+    np.random.seed(0)
     clf = SVC(tol=1e-5, C=5)
     # clf = GaussianNB()
     # clf = RandomForestClassifier()
